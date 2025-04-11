@@ -1,0 +1,16 @@
+---
+- name: install multiple package
+  hosts: test
+  become: yes
+  remote_user: root
+
+  tasks:
+  - name: install multiple package
+    apt:
+      name: "{{ item }}"
+      state: present
+
+    loop:
+      - ftp
+      - telnet
+      - htop
