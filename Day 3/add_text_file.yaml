@@ -1,0 +1,11 @@
+---
+- name: add text in file
+  hosts: test
+  become: yes
+  remote_user: root
+
+  tasks:
+  - name: add text
+    blockinfile:
+      path: /home/ubuntu/somu.txt
+      block: "hello world"
