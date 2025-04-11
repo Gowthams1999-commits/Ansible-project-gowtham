@@ -6,5 +6,5 @@
 
 ## Day 3 --> Files management
 
-## day 4 --> Package management
+## Day 4 --> Package management
 
