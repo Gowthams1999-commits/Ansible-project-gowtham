@@ -1,0 +1,9 @@
+- name: print hllo world
+  hosts: test
+  become: yes
+  remote_user: root
+
+  tasks:
+  - name: print word
+    debug:
+      msg: "hllow world"
