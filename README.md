@@ -9,3 +9,7 @@
 ## Day 4 --> Package management
 
 ## Day 5 --> Handlers,Variable,Condition & Loop
+
+## day 6 --> Ansible Roles
+
+
