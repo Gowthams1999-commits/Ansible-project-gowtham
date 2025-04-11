@@ -1,16 +1,18 @@
 ---
-- name: Install Apache WebServer
-  hosts: localhost
-  
-  tasks:
-    - name: Install Apache on Ubuntu Server
-      apt-get:
-        name: apache2
-        state: present
-      when: ansible_os_family == “Ubuntu“
+- name: install apache2
+  hosts: test
+  become: yes
+  remote_user: root
 
-- name: Install Apache on CentOS  Server
-  yum:
-    name: httpd
-    state: present
-  when: ansible_os_family == "RedHat"
+  tasks:
+  - name: install apache on rhel
+    yum:
+      name: httpd
+      state: present
+    when: ansible_os_family == "rhel"
+
+  - name: install apache on ubuntu
+    apt:
+      name: apache2
+      state: present
+    when: ansible_os_family == "Debian"
