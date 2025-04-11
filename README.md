@@ -10,6 +10,6 @@
 
 ## Day 5 --> Handlers,Variable,Condition & Loop
 
-## day 6 --> Ansible Roles
+## Day 6 --> Ansible Roles
 
 
