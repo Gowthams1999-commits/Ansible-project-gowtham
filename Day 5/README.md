@@ -1,4 +1,4 @@
-## Hadlers
+## Handlers
 
 • Handlers are executed at the end of the play once all tasks are finished. In Ansible, 
 handlers are typically used to start, reload, restart, and stop services
