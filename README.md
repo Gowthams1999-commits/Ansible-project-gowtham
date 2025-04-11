@@ -8,13 +8,3 @@
 
 ## day 4 --> Package management
 
-## Day 3 --> Tasks & Roles
-
-## Day 4 --> Ansible galaxy
-
-## Day 5 --> Ansible variable,condition & loops statement.
-
-## Day 6 --> Provisioning resources in aws using ansible.
-
-## Day 7 --> Integrate ansible with vault
-
