@@ -1,0 +1,11 @@
+---
+- name: create a file
+  hosts: test
+  become: yes
+  remote_user: root
+
+  tasks:
+  - name: create a file
+    file:
+      path: /home/ubuntu/keerthika
+      mode: 0777
