@@ -1,0 +1,11 @@
+---
+- name: copy files from control machine to target machine
+  hosts: test
+  become: yes
+  remote_user: root
+
+  tasks:
+  - name: copy file
+    copy:
+      src: /tmp/somu.txt
+      dest: /home/ubuntu
