@@ -1,4 +1,4 @@
-## Install ansible using atached script.
+## Install ansible using attached script.
 
 ## once ansible inatlled setup passwordless authentication for access your target machine from ansible control machine.
 
