@@ -4,6 +4,10 @@
 
 ## Day 2 --> My ansible first playbook and ad-hoc commands
 
+## Day 3 --> Files management
+
+## day 4 --> Package management
+
 ## Day 3 --> Tasks & Roles
 
 ## Day 4 --> Ansible galaxy
