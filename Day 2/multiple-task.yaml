@@ -1,0 +1,20 @@
+- name: install apache2
+  hosts: test
+  become: yes
+  remote_user: root
+
+  tasks:
+  - name: install apache2 package
+    apt:
+      name: apache2
+      state: present
+
+  - name: start apache2 service
+    service:
+      name: apache2
+      state: restarted
+    register: apache2_status
+
+  - name: verify apache2 service status
+    debug:
+      msg: "{{ apache2_status }}"
