@@ -1,17 +1,27 @@
----- name: Verify apache installation
- hosts: localhost
- tasks:- name: Ensure apache is at the latest version
- yum:
- name: httpd
- state: latest- name: Copy updated apache config file
- copy:
- src: /tmp/httpd.conf
- dest: /etc/httpd.conf
- notify:- Restart apache- name: Ensure apache is running
- service:
- name: httpd
- state: started
- handlers:- name: Restart apache
- service:
- name: httpd
- state: restarted
+---
+- name: install apache2
+  hosts: test
+  become: yes
+  remote_user: root
+
+  tasks:
+  - name: install apache2
+    apt:
+      name: apache2
+      state: present
+
+  - name: restart apache2 service
+    service:
+      name: apache2
+      state: restarted
+
+  - name: chnage apache2 service port number to 81
+    shell: "sed -i 's/Listen 82/Listen 81/g' /etc/apache2/ports.conf"
+    notify:
+    - restart apache2
+
+  handlers:
+    - name: restart apache2
+      service:
+        name: apache2
+        state: restarted
