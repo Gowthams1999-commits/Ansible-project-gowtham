@@ -1,0 +1,14 @@
+---
+- name: create a multiple users
+  hosts: test
+  become: yes
+  remote_user: root
+
+  vars:
+    users_name: [kamal,jana,mani]
+  tasks:
+  - name: creat users
+    user:
+      name: "{{ item }}"
+      state: present
+    with_items: "{{ users_name }}"
