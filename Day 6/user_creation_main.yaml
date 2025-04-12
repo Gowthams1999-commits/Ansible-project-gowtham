@@ -1,0 +1,9 @@
+---
+- name: create a multiple users
+
+  user:
+   name: "{{ item }}"
+   state: present
+  loop:
+  - mani
+  - abi
