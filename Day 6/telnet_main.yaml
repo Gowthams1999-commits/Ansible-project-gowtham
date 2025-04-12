@@ -1,0 +1,5 @@
+---
+- name: install telnet
+  apt:
+   name: telnet
+   state: present
