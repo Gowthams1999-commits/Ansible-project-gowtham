@@ -1,0 +1,9 @@
+---
+- name: install pack
+  hosts: test
+  become: yes
+  remote_user: root
+  roles:
+   - apache2
+   - telnet
+   - user_creation
