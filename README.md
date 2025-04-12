@@ -12,4 +12,8 @@
 
 ## Day 6 --> Ansible Roles
 
+## Day 7 --> Ansible Galaxy
+
+## day 8 --> Integrate Ansible with  vault
+
 
