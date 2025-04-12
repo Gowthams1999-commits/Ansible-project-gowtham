@@ -6,21 +6,22 @@
 writing complex playbooks, and it makes them easier to reus
 
 
-To create roles
- # Go to ControlNode
- # cd /etc/ansible/roles
- Make directory for each role
- # e.g mkdir [rolenames]
- # mkdir basicinstall
- # mkdir fullinstall
- Create sub-directory tasks
- You can also create roles based on the type of servers:
- e.g. # mkdir webservers
- # mkdir dbservers
- # mkdir appservers
- within each directory
- # mkdir basicinstall/tasks
- # mkdir fullinstall/tasks
- Create yml files within these sub-directories
- # touch basicinstall/tasks/main.yml
- # touch fullinstall/tasks/main.ym
+## To create roles
+   Go to ControlNode
+   cd /etc/ansible/roles
+ 
+ ## Make directory for each role
+   e.g mkdir [test_role]
+   mkdir apache2
+   mkdir telnet
+   mkdir user_creation
+ 
+ ## within each directory
+   mkdir apache2/tasks
+   mkdir telnet/tasks
+   mkdir user_creation/tasks
+   
+ ## Create yml files within these sub-directories
+   touch apache2/tasks/main.yml
+   touch telnet/tasks/main.yml
+   touch user_creation/tasks/main.yaml
