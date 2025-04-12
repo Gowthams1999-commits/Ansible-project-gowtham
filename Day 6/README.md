@@ -12,14 +12,14 @@ writing complex playbooks, and it makes them easier to reus
  
  ## Make directory for each role
    e.g mkdir [test_role]
-   mkdir apache2
-   mkdir telnet
-   mkdir user_creation
+   1. mkdir apache2
+   2. mkdir telnet
+   3. mkdir user_creation
  
  ## within each directory
-   mkdir apache2/tasks
-   mkdir telnet/tasks
-   mkdir user_creation/tasks
+   1. mkdir apache2/tasks
+   2. mkdir telnet/tasks
+   3. mkdir user_creation/tasks
    
  ## Create yml files within these sub-directories
    touch apache2/tasks/main.yml
